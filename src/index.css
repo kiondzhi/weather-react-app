@@ -1,0 +1,268 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container {
+  height: 50vh;
+  width: 35vh;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.search-father {
+  position: relative;
+
+}
+
+.weather-header {
+  margin-left: 10px;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.weather-city {
+  color: black;
+  overflow: hidden;
+  width: 90px;
+  margin-right: 10px;
+  max-height: 80px;
+  font-size: 15px;
+}
+
+.location-container img {
+  height: 20px;
+}
+
+.search-container img {
+  height: 20px;
+}
+
+.search-container {
+  animation-name: search-animation;
+  animation-duration: 2s;
+}
+
+@keyframes search-animation {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+.search-block {
+  position: relative;
+  top: 15px;
+  right: 0px;
+  background-color: rgba(118, 118, 126, 0.209);
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+
+.search-block:focus {
+  outline: none;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 15%;
+}
+
+.submit-button {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  height: 15px;
+  width: 50px;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(118, 118, 126, 0.209);
+  color: black;
+  cursor: pointer;
+}
+
+.close-button {
+  position: relative;
+  top: 5px;
+  left: 65px;
+  height: 15px;
+  width: 50px;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(118, 118, 126, 0.209);
+  color: black;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: rgb(206, 76, 36);
+  transition-duration: 0.5s;
+}
+
+.submit-button:hover {
+  background-color: rgb(54, 193, 70);
+  transition-duration: 0.5s;
+}
+
+.weather-main {
+  margin-top: 40px;
+  margin-bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.weather-main img {
+  height: 100px;
+  animation-name: search-animation;
+}
+
+
+
+.weather-details {
+  margin: 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.temperature {
+  margin: 0;
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.search-father img {
+  height: 25px;
+  padding: 30%;
+  border-radius: 40%;
+  background-color: rgb(114, 147, 114);
+  transition-duration: 0.5s;
+}
+
+.search-father img:hover {
+  background-color: rgb(54, 193, 70);
+}
+
+.weather-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.weather-footer img {
+  height: 25px;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.humidity p {
+  font-size: 12px;
+  margin: 0 0 0 5px;
+  color: black;
+}
+
+.humidity-percentage {
+  font-weight: bold;
+}
+
+.wind-speed-container {
+  margin-right: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.wind-speed-pic {
+  margin-left: 12%;
+}
+
+.wind-speed-container p {
+  font-size: 12px;
+  margin: 0 0 0 5px;
+  color: black;
+}
+
+.wind-speed {
+  font-weight: bold;
+}
